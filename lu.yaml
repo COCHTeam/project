@@ -1,0 +1,27 @@
+project: lu
+version: 1
+env:
+  tmp: ./tmp_path
+  mode: verbose
+tasks:
+  load:
+    matrix: example/nd6k/nd6k.mtx
+    mode: verbose
+  reorder:
+    algo: RDCPU
+    mode: verbose
+    out:
+      path: ./tmp_path/reorder_out.txt
+      format: text
+  pre:
+    algo: PTCPU
+    mode: verbose
+    out:
+      path: ./tmp_path/pre_out.txt
+      format: text
+  solve:
+    algo: STCPU
+    mode: verbose
+    out:
+      path: ./tmp_path/solver_out.txt
+      format: text
