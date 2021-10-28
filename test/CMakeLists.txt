@@ -4,7 +4,7 @@ set(CMAKE_C_COMPILER gcc)
 
 #include_directories(include)
 
-file(GLOB SOURCES test.c mat-band-test.c ../src/mat-band.c)
+file(GLOB SOURCES test.c mat-band-test.c ../src/mat-band.c queue-test.c ../src/queue.c)
 
 add_compile_options( "$<$<CONFIG:DEBUG>:-g3>")
 add_compile_options( "$<$<CONFIG:RELEASE>:-O3;-funroll-loops>" )
