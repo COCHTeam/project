@@ -1,20 +1,35 @@
 
+## GitFlow
 
-# Doto
+Dev model GitFlow https://datasift.github.io/gitflow/IntroducingGitFlow.html
 
 
-feature/mat-band
+## branch name scheme
+
+feature/devname-todonumber-todoname
+hotfix/
+release/
+
+
+## To Do
+
+01 feature/mat-band
  Implement mat-band matrix
 
-feature/visual
+02 feature/visual
  Port on visual studio
 
-feature/bit-mat
+03 feature/bit-mat
  Implement bit-map
 
-feature/mat
+04 feature/mat
  Implement mat
 
-feature/github-action
+05 feature/github-action
  Use github action
- 
+
+
+## Order
+Stack : 02, 04, 01, 03, 05
+
+
